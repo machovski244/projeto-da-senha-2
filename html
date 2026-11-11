@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofre Matemático - Nível Avançado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cofre Matemático 🔓</h2>
+        <p class="subtitle">Desafios avançados do Ensino Médio para abrir o cofre!</p>
+
+        <!-- Seletor de Dificuldade -->
+        <div class="level-selector">
+            <button class="level-btn" data-level="medio">Médio</button>
+            <button class="level-btn active" data-level="dificil">Difícil</button>
+            <button class="level-btn" data-level="expert">Expert (Extremo)</button>
+        </div>
+
+        <!-- Display do Cofre (3 Dígitos) -->
+        <div class="vault-display">
+            <div class="digit-box" id="digit-1">?</div>
+            <div class="digit-box" id="digit-2">?</div>
+            <div class="digit-box" id="digit-3">?</div>
+        </div>
+
+        <div class="challenge-box">
+            <div id="step-title">Clique em "Novo Cofre" para começar</div>
+            <div id="problem-text"></div>
+            <div id="hint-text" class="hint"></div>
+            
+            <div class="input-group">
+                <input type="number" id="guess-input" placeholder="Sua resposta..." disabled>
+                <button id="guess-btn" disabled>Confirmar</button>
+            </div>
+            
+            <p id="feedback-msg" class="feedback"></p>
+        </div>
+
+        <button id="start-btn" class="btn-primary">Novo Cofre (Gerar Desafios)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
